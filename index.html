@@ -9,12 +9,17 @@
 
     <title>Frontend Mentor | Order summary card</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       body {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "Red Hat Display", sans-serif;
       }
 
       .order-summary-container {
@@ -30,7 +35,7 @@
         border: 2px solid black;
         border-radius: 4%;
         width: 300px;
-        height: 450px;
+        height: 500px;
       }
 
       .order-summary-img img {
@@ -41,7 +46,10 @@
 
       .order-summary-text {
         border: 2px solid black;
-        padding: 10px 30px;
+        /* padding: 10px 20px; */
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 30px;
       }
 
       .order-summary-title {
@@ -55,6 +63,30 @@
 
       .order-summary-button {
         text-align: center;
+        margin-top: 1rem;
+      }
+
+      .order-summary-button .order-summary-procceed a {
+        color: #ffffff;
+        padding: 0.8rem 4.3rem;
+        font-size: 0.6rem;
+        border-radius: 8px;
+        background-color: hsl(245, 75%, 52%);
+        text-decoration: none;
+        font-weight: 700;
+        box-shadow: 1px 5px 3px hsl(228, 45%, 44%);
+      }
+
+      .order-summary-button-close {
+        margin-top: 1.5rem;
+        text-align: center;
+      }
+
+      .order-summary-button-close .order-summary-cancel a {
+        color: hsl(223, 47%, 23%);
+        font-size: 0.6rem;
+        text-decoration: none;
+        font-weight: 700;
       }
 
       .attribution {
@@ -74,8 +106,8 @@
         </div>
         <div class="order-summary-text">
           <div class="order-summary-title">
-            <h1>Order Summary</h1>
-            <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+            <h1 class="order-summary-header">Order Summary</h1>
+            <p class="order-summary-paragraf">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
           </div>
           <div class="order-summary-annual">
             <div class="order-summary-annualtext">
@@ -87,8 +119,10 @@
           </div>
           <div class="order-summary-button">
             <div class="order-summary-procceed">
-              <button>Procceed to Payment</button>
+              <a href="#">Procceed to Payment</a>
             </div>
+          </div>
+          <div class="order-summary-button-close">
             <div class="order-summary-cancel">
               <a href="#">Cancel Order</a>
             </div>
